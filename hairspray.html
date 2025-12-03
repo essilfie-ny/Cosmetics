@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products - Cosmetic Brand</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+
+  /* Gradient */
+  background: linear-gradient(135deg, #ffae74, #897bc7, #ffe9d6);
+  background-size: 300% 300%; /* bigger than 100% to allow movement */
+
+  /* Animation */
+  animation: gradientMove 15s ease infinite;
+}
+
+/* Keyframes for moving gradient */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+    h2 {
+      font-weight: 600;
+    }
+
+    .card-title {
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .btn-primary {
+      background-color: #5637b5; /* cosmetic-brand pink */
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #bd2166;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container my-5">
+  <h2 class="text-center mb-4">Our HairSparys</h2>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+    
+    <!-- Product 1 -->
+<!-- Product 1 -->
+<div class="col">
+  <div class="card h-100 shadow-sm">
+    <img src="https://picsum.photos/300/300?random=1" class="card-img-top" alt="Product 1">
+
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">HAIR SOFTEN SPARY 80ml/250ml</h5>
+      <p class="card-text"> 80ml-$6.34, 250ml-$8.89</p>
+
+      <!-- Small Info Button -->
+      <button class="btn btn-outline-secondary btn-sm mb-2" 
+              data-bs-toggle="modal" 
+              data-bs-target="#infoProduct1">
+        Info
+      </button>
+
+      <!-- Buy Now Button -->
+      <a href="#" class="btn btn-primary mt-auto">Buy Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Product Info Modal -->
+<div class="modal fade" id="infoProduct1" tabindex="-1" aria-labelledby="infoProduct1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoProduct1Label">HAIR SOFTEN SPARY 80ml/250ml</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <img src="https://picsum.photos/300/300?random=1" class="img-fluid rounded mb-3">
+        <p><strong>Price:</strong> 80ml-$6.34, 250ml-$8.89</p>
+        <p><strong>Effect:</strong> Enriched with deep-sea nutrients, it rejuvenates dry and stressed hair to make the hair shiny smooth and moisturized.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  <!-- Product 2 -->
+<div class="col">
+  <div class="card h-100 shadow-sm">
+    <img src="https://picsum.photos/300/300?random=2" class="card-img-top" alt="Product 2">
+
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">FINISHING SPRAY 250ml</h5>
+      <p class="card-text">$8.06</p>
+
+      <button class="btn btn-outline-secondary btn-sm mb-2" 
+              data-bs-toggle="modal" 
+              data-bs-target="#infoProduct2">Info</button>
+
+      <a href="#" class="btn btn-primary mt-auto">Buy Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="infoProduct2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">FINISHING SPRAY 250ml</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://picsum.photos/300/300?random=2" class="img-fluid rounded mb-3" alt="">
+        <p><strong>Price:</strong> $8.06</p>
+        <p><strong>Effect:</strong> The ultimate high performance styling product with incredible holding power, it enriches with silk amino acids, and gives the hair powerful, strong, long-lasting hold and super shine, finishes your style at last with 24 hours humidity resistance, fast drying without stickiness.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Product 3 -->
+<div class="col">
+  <div class="card h-100 shadow-sm">
+    <img src="https://picsum.photos/300/300?random=3" class="card-img-top" alt="Product 3">
+
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">ANGEL SETTING HAIR SPAY 200ml</h5>
+      <p class="card-text">$7.89</p>
+
+      <button class="btn btn-outline-secondary btn-sm mb-2" 
+              data-bs-toggle="modal" 
+              data-bs-target="#infoProduct3">Info</button>
+
+      <a href="#" class="btn btn-primary mt-auto">Buy Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="infoProduct3" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">ANGEL SETTING HAIR SPAY 200ml</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://picsum.photos/300/300?random=3" class="img-fluid rounded mb-3" ALT="">
+        <p><strong>Price:</strong> $7.89</p>
+        <p><strong>Effect:</strong>  Designed for blow drying, finger drying and roller sets, it adds volume, lift and sheen. Does not leave hair feeling stiff or sticky and is recommended for use on all types of hair.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products - Cosmetic Brand</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+
+  /* Gradient */
+  background: linear-gradient(135deg, #ffae74, #897bc7, #ffe9d6);
+  background-size: 300% 300%; /* bigger than 100% to allow movement */
+
+  /* Animation */
+  animation: gradientMove 15s ease infinite;
+}
+
+/* Keyframes for moving gradient */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+    h2 {
+      font-weight: 600;
+    }
+
+    .card-title {
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .btn-primary {
+      background-color: #5637b5; /* cosmetic-brand pink */
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #bd2166;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container my-5">
+  <h2 class="text-center mb-4">Our Water-Element</h2>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+    
+<!-- Product 1 -->
+<div class="col">
+  <div class="card h-100 shadow-sm">
+    <img src="https://picsum.photos/300/300?random=1" class="card-img-top" alt="Product 1">
+
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">WATER ELEMENT WAVE(normal hair) 120mlx2</h5>
+      <p class="card-text">$6.91</p>
+
+      <button class="btn btn-outline-secondary btn-sm mb-2" 
+              data-bs-toggle="modal" 
+              data-bs-target="#infoProduct1">Info</button>
+
+      <a href="#" class="btn btn-primary mt-auto">Buy Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="infoProduct1" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">WATER ELEMENT WAVE(normal hair) 120mlx2</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://picsum.photos/300/300?random=1" class="img-fluid rounded mb-3" ALT="">
+        <p><strong>Price:</strong> $6.91</p>
+        <p><strong>Effect:</strong> Enriched with natural vitamin E, amino acids and anti-oxidants, it nourishes and strengthens the hair during perm, leaving the hair strong and vibrant.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Product 2 -->
+<div class="col">
+  <div class="card h-100 shadow-sm">
+    <img src="https://picsum.photos/300/300?random=2" class="card-img-top" alt="Product 2">
+
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">WATER ELEMENT WAVE(damage hair) 120mlx2</h5>
+      <p class="card-text">$6.91</p>
+
+      <button class="btn btn-outline-secondary btn-sm mb-2" 
+              data-bs-toggle="modal" 
+              data-bs-target="#infoProduct2">Info</button>
+
+      <a href="#" class="btn btn-primary mt-auto">Buy Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="infoProduct2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">WATER ELEMENT WAVE(damage hair) 120mlx2</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://picsum.photos/300/300?random=2" class="img-fluid rounded mb-3" alt="">
+        <p><strong>Price:</strong> $6.91</p>
+        <p><strong>Effect:</strong> Enriched with natural vitamin E, amino acids and anti-oxidants, it nourishes and strengthens the hair during perm, leaving the hair strong and vibrant.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Product 3 -->
+<div class="col">
+  <div class="card h-100 shadow-sm">
+    <img src="https://picsum.photos/300/300?random=3" class="card-img-top" alt="Product 3">
+
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">WATER ELEMENT WAVE(all of the type hair)1000mlx2 250mlx1</h5>
+      <p class="card-text">$14.59</p>
+
+      <button class="btn btn-outline-secondary btn-sm mb-2" 
+              data-bs-toggle="modal" 
+              data-bs-target="#infoProduct3">Info</button>
+
+      <a href="#" class="btn btn-primary mt-auto">Buy Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="infoProduct3" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">WATER ELEMENT WAVE(all of the type hair)1000mlx2 250mlx1</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://picsum.photos/300/300?random=3" class="img-fluid rounded mb-3" ALT="">
+        <p><strong>Price:</strong> $14.59</p>
+        <p><strong>Effect:</strong> Enriched with natural vitamin E, amino acids and anti-oxidants, it nourishes and strengthens the hair during perm, leaving the hair strong and vibrant.</p>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- Product 4-->
+<div class="col">
+  <div class="card h-100 shadow-sm">
+    <img src="https://picsum.photos/300/300?random=4" class="card-img-top" alt="Product 4">
+
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">DEEP-SEA WATER ION-WAVE(straight hair)500mlx2,250mlx1</h5>
+      <p class="card-text">$12.67</p>
+
+      <button class="btn btn-outline-secondary btn-sm mb-2" 
+              data-bs-toggle="modal" 
+              data-bs-target="#infoProduct4">Info</button>
+
+      <a href="#" class="btn btn-primary mt-auto">Buy Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal fade" id="infoProduct4" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">DEEP-SEA WATER ION-WAVE(straight hair)500mlx2,250mlx1</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://picsum.photos/300/300?random=4" class="img-fluid rounded mb-3" ALT="">
+        <p><strong>Price:</strong> $12.67</p>
+        <p><strong>Effect:</strong> Enriched with extract of GAG from deep-sea shark mucus, to effectively prevent hair collagen from chemical damage, and make the hair shiny even after a perm.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Product 5-->
+<div class="col">
+  <div class="card h-100 shadow-sm">
+    <img src="https://picsum.photos/300/300?random=5" class="card-img-top" alt="Product 5">
+
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">DEEP-SEA WATER ION-WAVE CREAM(straight hair)500gX2</h5>
+      <p class="card-text">$7.67</p>
+
+      <button class="btn btn-outline-secondary btn-sm mb-2" 
+              data-bs-toggle="modal" 
+              data-bs-target="#infoProduct5">Info</button>
+
+      <a href="#" class="btn btn-primary mt-auto">Buy Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 5-->
+<div class="modal fade" id="infoProduct5" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">DEEP-SEA WATER ION-WAVE CREAM(straight hair)500gX2</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://picsum.photos/300/300?random=5" class="img-fluid rounded mb-3" ALT="">
+        <p><strong>Price:</strong> $7.67</p>
+        <p><strong>Effect:</strong> Enriched with ice-sea mud and several deep-sea minerals and microelements, it replenishes moisture and nutrients， making the hair smooth and shiny after a perm.</p>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- Product 6-->
+<div class="col">
+  <div class="card h-100 shadow-sm">
+    <img src="https://picsum.photos/300/300?random=6" class="card-img-top" alt="Product 6">
+
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">WATER ELEMENT NOURISHING CREAM 500g/1000g</h5>
+      <p class="card-text">500g-$7.69, 1000g-$8.85</p>
+
+      <button class="btn btn-outline-secondary btn-sm mb-2" 
+              data-bs-toggle="modal" 
+              data-bs-target="#infoProduct6">Info</button>
+
+      <a href="#" class="btn btn-primary mt-auto">Buy Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 6-->
+<div class="modal fade" id="infoProduct6" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">WATER ELEMENT NOURISHING CREAM 500g/1000g</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://picsum.photos/300/300?random=6" class="img-fluid rounded mb-3" ALT="">
+        <p><strong>Price:</strong> 500g-$7.69, 1000g-$8.85</p>
+        <p><strong>Effect:</strong> Enriched with extract of NMF from ocean organisms, it keeps the hair nourished and moisturized. Derived from several kinds of natural plant piths, it accelerates cell recovery and protects hair cells from oxidation, leaving the hair shiny and healthy.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Product 7-->
+<div class="col">
+  <div class="card h-100 shadow-sm">
+    <img src="https://picsum.photos/300/300?random=7" class="card-img-top" alt="Product 7">
+
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">WATER ELEMENT HAIR COLOR CREAM (81 COLORS) 100g</h5>
+      <p class="card-text">$6.98</p>
+
+      <button class="btn btn-outline-secondary btn-sm mb-2" 
+              data-bs-toggle="modal" 
+              data-bs-target="#infoProduct7">Info</button>
+
+      <a href="#" class="btn btn-primary mt-auto">Buy Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 7-->
+<div class="modal fade" id="infoProduct7" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">WATER ELEMENT HAIR COLOR CREAM (81 COLORS) 100g</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://picsum.photos/300/300?random=7" class="img-fluid rounded mb-3" ALT="">
+        <p><strong>Price:</strong> $6.98</p>
+        <p><strong>Effect:</strong> Enriched with the pith of deep-sea seaweeds and using advanced technology to increase hair’s protection against UV rays, it prevents dryness and makes the hair naturally vibrant.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Product 8-->
+<div class="col">
+  <div class="card h-100 shadow-sm">
+    <img src="https://picsum.photos/300/300?random=8" class="card-img-top" alt="Product 8">
+
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">WATER ELEMENT ICE SEA MUD NURSING CREAM 500g/1000g</h5>
+      <p class="card-text">500g-$7.69, 1000g-$8.85</p>
+
+      <button class="btn btn-outline-secondary btn-sm mb-2" 
+              data-bs-toggle="modal" 
+              data-bs-target="#infoProduct8">Info</button>
+
+      <a href="#" class="btn btn-primary mt-auto">Buy Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 8 -->
+<div class="modal fade" id="infoProduct8" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">WATER ELEMENT ICE SEA MUD NURSING CREAM 500g/1000g</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://picsum.photos/300/300?random=8" class="img-fluid rounded mb-3" ALT="">
+        <p><strong>Price:</strong> 500g-$7.69, 1000g-$8.85</p>
+        <p><strong>Effect:</strong> Salon-size conditioner designed for hydration and volume.Enriched with ice-sea mud and several deep-sea minerals and microelements, it accelerates cell recovery, leaving the hair shiny and vibrant</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Product 9-->
+<div class="col">
+  <div class="card h-100 shadow-sm">
+    <img src="https://picsum.photos/300/300?random=9" class="card-img-top" alt="Product 9">
+
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Water Element Decolor Powder (20g/piece, 12pieces/set)</h5>
+      <p class="card-text">$7.64</p>
+
+      <button class="btn btn-outline-secondary btn-sm mb-2" 
+              data-bs-toggle="modal" 
+              data-bs-target="#infoProduct9">Info</button>
+
+      <a href="#" class="btn btn-primary mt-auto">Buy Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 9-->
+<div class="modal fade" id="infoProduct9" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Water Element Decolor Powder (20g/piece, 12pieces/set)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://picsum.photos/300/300?random=9" class="img-fluid rounded mb-3" ALT="">
+        <p><strong>Price:</strong> $7.64</p>
+        <p><strong>Effect:</strong> It contains moisturize preservation gene, can decolor  the hair without damage.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Product 10-->
+<div class="col">
+  <div class="card h-100 shadow-sm">
+    <img src="https://picsum.photos/300/300?random=10" class="card-img-top" alt="Product 10">
+
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">WATER ELEMENT DECOLOR POWDER (500g) blue</h5>
+      <p class="card-text">$9.35</p>
+
+      <button class="btn btn-outline-secondary btn-sm mb-2" 
+              data-bs-toggle="modal" 
+              data-bs-target="#infoProduct10">Info</button>
+
+      <a href="#" class="btn btn-primary mt-auto">Buy Now</a>
+    </div>
+  </div>
+</div>
+<!-- Modal 10-->
+<div class="modal fade" id="infoProduct10" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">WATER ELEMENT DECOLOR POWDER (500g) blue</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://picsum.photos/300/300?random=10" class="img-fluid rounded mb-3" ALT="">
+        <p><strong>Price:</strong> $9.35</p>
+        <p><strong>Effect:</strong>  It contains moisturize preservation gene, can decolor  the hair without damage.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Product 11-->
+<div class="col">
+  <div class="card h-100 shadow-sm">
+    <img src="https://picsum.photos/300/300?random=11" class="card-img-top" alt="Product 11">
+
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">WATER ELEMENT PEROXIDE CREAM (1.8%,3%,6%,9%,12%,15%) 1000ml</h5>
+      <p class="card-text">$7.77</p>
+
+      <button class="btn btn-outline-secondary btn-sm mb-2" 
+              data-bs-toggle="modal" 
+              data-bs-target="#infoProduct11">Info</button>
+
+      <a href="#" class="btn btn-primary mt-auto">Buy Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 11-->
+<div class="modal fade" id="infoProduct11" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">WATER ELEMENT PEROXIDE CREAM (1.8%,3%,6%,9%,12%,15%) 1000ml</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://picsum.photos/300/300?random=11" class="img-fluid rounded mb-3" ALT="">
+        <p><strong>Price:</strong> $7.77</p>
+        <p><strong>Effect:</strong> It can gently desalt the colour of the hair and must be used with dye cream or bleaching powder.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+

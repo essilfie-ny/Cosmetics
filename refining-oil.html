@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products - Cosmetic Brand</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+
+  /* Gradient */
+  background: linear-gradient(135deg, #ffae74, #897bc7, #ffe9d6);
+  background-size: 300% 300%; /* bigger than 100% to allow movement */
+
+  /* Animation */
+  animation: gradientMove 15s ease infinite;
+}
+
+/* Keyframes for moving gradient */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+    h2 {
+      font-weight: 600;
+    }
+
+    .card-title {
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .btn-primary {
+      background-color: #5637b5; /* cosmetic-brand pink */
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #bd2166;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container my-5">
+  <h2 class="text-center mb-4">Our Oils</h2>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+    
+    <!-- Product 1 -->
+<!-- Product 1 -->
+<div class="col">
+  <div class="card h-100 shadow-sm">
+    <img src="https://picsum.photos/300/300?random=1" class="card-img-top" alt="Product 1">
+
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">REFINING OIL 60ml/100ml</h5>
+      <p class="card-text">60ml-$8.01, 100ml-8.85</p>
+
+      <!-- Small Info Button -->
+      <button class="btn btn-outline-secondary btn-sm mb-2" 
+              data-bs-toggle="modal" 
+              data-bs-target="#infoProduct1">
+        Info
+      </button>
+
+      <!-- Buy Now Button -->
+      <a href="#" class="btn btn-primary mt-auto">Buy Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Product Info Modal -->
+<div class="modal fade" id="infoProduct1" tabindex="-1" aria-labelledby="infoProduct1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoProduct1Label">REFINING OIL 60ml/100ml</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <img src="https://picsum.photos/300/300?random=1" class="img-fluid rounded mb-3">
+        <p><strong>Price:</strong> 60ml-$8.01, 100ml-8.85</p>
+        <p><strong>Effect:</strong> It is created from the stems of deep-sea plants in order to deeply nourish your hair. </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
